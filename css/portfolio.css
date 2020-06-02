@@ -7,6 +7,10 @@
   --color-bg-child: #f5f4fa;
 }
 
+.projects-item {
+  position: relative;
+}
+
 .projects-item > .link {
   display: block;
 }
@@ -89,9 +93,14 @@
 }
 
 .text-projects {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-top: 0;
   margin-bottom: 0;
   padding: 63px 24px;
+  width: 370px;
+  height: 294px;
 
   font-weight: 400;
   font-size: 18px;
@@ -100,9 +109,13 @@
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
 
-  opacity: ;
+  opacity: 0;
 
   /* display: none; */
+}
+
+.projects-item:hover .text-projects {
+  opacity: 1;
 }
 
 /* выстраиваем элементы в сетку 3*3 */

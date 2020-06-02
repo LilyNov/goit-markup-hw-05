@@ -7,7 +7,7 @@
   --color-bg-child: #f5f4fa;
 }
 
-.projects-item {
+.projects-item .box {
   position: relative;
 }
 

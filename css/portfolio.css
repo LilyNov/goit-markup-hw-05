@@ -107,13 +107,27 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  background-color: rgba(33, 150, 243, 0.9);
 
   opacity: 0;
 
   /* display: none; */
 }
 
+.box::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+/* .projects-item:hover .box::before {
+  opacity: 1;
+} */
+
+.projects-item:hover .box::before,
 .projects-item:hover .text-projects {
   opacity: 1;
 }

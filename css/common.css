@@ -138,6 +138,7 @@ margin-left: 50px; */
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -159,10 +160,13 @@ margin-left: 50px; */
   background-color: var(--accent-text-color);
   border-radius: 2px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover::after {
+.site-nav .link:hover::after,
+.site-nav .link:focus::after {
   opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -174,6 +178,7 @@ margin-left: 50px; */
 .foot-link .link:hover,
 .foot-link .link:focus {
   color: var(--accent-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cont-nav .link {
@@ -184,6 +189,7 @@ margin-left: 50px; */
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* svg иконка почты */
@@ -263,11 +269,11 @@ margin-left: 50px; */
   margin-bottom: 21px;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 1ю14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
-/* Ссылки соц сетей футер */
+/* Ссылки соц сетей команды и футер */
 
 .social .list {
   display: flex;
@@ -285,6 +291,8 @@ margin-left: 50px; */
   background-color: rgba(255, 255, 255, 0.1);
 
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social .social-icon {
@@ -295,6 +303,9 @@ margin-left: 50px; */
 .social .link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .foot-link .social .item {

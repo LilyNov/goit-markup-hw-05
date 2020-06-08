@@ -6,7 +6,9 @@
   --foot-primery-color: #2f303a;
   --color-bg-child: #f5f4fa;
 }
-
+.projects {
+  border-top: 1px solid #ececec;
+}
 .projects-item .box {
   position: relative;
 }
